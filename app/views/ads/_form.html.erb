@@ -1,21 +1,21 @@
 <%= form_for ad do |form| %>
-    <div>
+    <div class "form-group">
       <%= form.label :title %>
-      <%= form.text_field :title %>
+      <%= form.text_field :title, class: 'form-control' %>
     </div>
   
     <div>
       <%= form.label :description %>
-      <%= form.text_area :description %>
+      <%= form.text_area :description, class: 'form-control' %>
     </div>
   
     <div>
       <%= form.label :prince %>
-      <%= form.number_field :prince %>
+      <%= form.number_field :prince, class: 'form-control' %>
     </div>
   
-    <div>
-      <%= form.submit %>
+    <div class='actions'>
+      <%= form.submit 'Salvar' , class: 'btn btn-primary' %>
     </div>
 <% end %>
   
